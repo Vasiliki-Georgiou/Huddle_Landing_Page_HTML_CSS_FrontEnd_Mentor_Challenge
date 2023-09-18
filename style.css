@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    background-position-y: 10%;
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 0;
+}
+
+.product {
+    width: 300px;
+}
+
+.product img:first-child {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.product img:last-child {
+    width: 100%;
+}
+
+.presentation {
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.presentation h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.presentation button {
+    background-color: #fff;
+    width: 70%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 16px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.presentation button:active,
+.presentation button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.social .fa-facebook-f, 
+.social .fa-twitter,
+.social .fa-instagram {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social .fa-facebook-f:active, 
+.social .fa-twitter:active,
+.social .fa-instagram:active,
+.social .fa-facebook-f:hover, 
+.social .fa-twitter:hover,
+.social .fa-instagram:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+} 
+
+@media(min-width: 1024px) {
+    body {
+        background: url(../images/bg-desktop.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        padding: 0 50px;
+    }
+
+    main {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product, .presentation {
+        width: 50%;
+    }
+
+    /* .product img:first-child {
+        transform: translateY(-150%);
+    } */
+
+    /* .product img:last-child {
+        transform: translateY(-15%);
+    } */
+
+    .presentation {
+        margin-left: 32px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .presentation button {
+        width: 40%;
+    }
+
+    .presentation .social {
+        transform: translateY(300%);
+    }
+}
