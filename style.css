@@ -47,9 +47,9 @@ body {
 .presentation button {
     background-color: #fff;
     width: 70%;
-    padding: 12px;
+    padding: 16px;
     margin-top: 10px;
-    border-radius: 16px;
+    border-radius: 25px;
     border: none;
     color: hsl(257, 40%, 49%);
     font-weight: 400;
@@ -109,28 +109,35 @@ body {
         width: 50%;
     }
 
-    /* .product img:first-child {
-        transform: translateY(-150%);
-    } */
+    .product img:first-child {
+        transform: translateY(-40%);
+        max-width: 60%;
+    }
 
-    /* .product img:last-child {
-        transform: translateY(-15%);
-    } */
+    .product img:last-child {
+        transform: translateY(-10%);
+        width: 90%;
+    }
 
     .presentation {
-        margin-left: 32px;
+        margin-left: 40px;
         text-align: left;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: flex-end;
     }
 
+    .presentation div:first-child {
+        transform: translateY(10%);
+        padding: 30px;
+    }
+
     .presentation button {
-        width: 40%;
+        width: 30%;
     }
 
     .presentation .social {
-        transform: translateY(300%);
+        transform: translateY(220%);
     }
 }
